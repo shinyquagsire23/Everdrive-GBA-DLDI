@@ -52,6 +52,7 @@ u16 sd_cfg;
 u16 eep_size;
 
 u8 bi_init() {
+    // TODO need heuristics to detect CFG_RTC_ON, CFG_ROM_BANK, and CFG_BIG_ROM
     cart_cfg = CFG_NROM_RAM;
     bi_unlock_regs();
     
